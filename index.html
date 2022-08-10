@@ -198,12 +198,6 @@
           font-size: 1.5rem;
         }
       }
-      .input{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-      }
       @media (max-height: 500px) {
         .box {
           height: 80vh;
@@ -227,15 +221,7 @@
       <div class="wave -two"></div>
       <div class="wave -three"></div>
 
-      <div id="wthr-icon">
-        <div class="input">
-          <input type="text">
-          <button>Submit</button>
-        </div>
-        <div id="wthr-icon_ic">
-
-        </div>
-      </div>
+      <div id="wthr-icon"></div>
       <div class="info">
         <h2 class="location">
           <i
@@ -307,7 +293,7 @@
         return fullDate;
       };
 
-      currDate.innerHTML = getCurrentDay()+ " | "+ getFullDate();
+      currDate.innerHTML = getCurrentDay() + " | " + getFullDate();
     </script>
     <script src="server.js"></script>
   </body>
